@@ -2,8 +2,8 @@ import { describe, test, expect } from "@jest/globals";
 import app from "../src/server.js";
 import request from "supertest";
 import { configuration } from "../src/config.js";
-import { esPrimo } from "../src/numeros";
-import { esPalindromo } from "../src/palindromo"; 
+import { esPrimo } from "../src/numeros.js";
+import { esPalindromo } from "../src/palindromo.js"; 
 
 describe('Pruebas para la función esPrimo', () => {
 
