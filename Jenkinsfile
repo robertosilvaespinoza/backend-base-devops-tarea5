@@ -23,14 +23,14 @@ environment {
 
         stage('Testing') {
             steps {
-                echo 'Ejecutando pruebas...'
+                echo 'Testing'
                 sh 'npm test'
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Construyendo el proyecto...'
+                echo 'Proyecto'
                 sh 'npm run build'
             }
         }
@@ -39,7 +39,7 @@ environment {
         stage('Construir imagen Docker') {
             steps {
                 script {
-                    echo 'Construyendo imagen Docker...'
+                    echo 'Construyendo imagen'
                     sh 'docker build -t backend-base-devops-tarea5 .'
                 }
             }
