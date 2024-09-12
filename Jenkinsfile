@@ -20,7 +20,7 @@ environment {
             }
         }
     }
-stage('Testing') {
+        stage('Testing') {
             steps {
                 echo 'Ejecutando pruebas...'
                 sh 'npm run test'
