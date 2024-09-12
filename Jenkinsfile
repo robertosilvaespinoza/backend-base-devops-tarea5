@@ -12,6 +12,7 @@ environment {
         KUBERNETES_CREDENTIALS_ID = 'k8s-credentials' // ID de las credenciales de Kubernetes en Jenkins
     }
 
+    
     stages {
         stage('Instalar dependencias') {
             steps {
@@ -33,13 +34,15 @@ environment {
                 sh 'npm run build'
             }
         }
-}
-}
-stage('Construir imagen Docker') {
+
+
+        stage('Construir imagen Docker') {
             steps {
                 script {
                     echo 'Construyendo imagen Docker...'
-                    sh 'docker build -t $DOCKER_IMAGE .'
+                    sh 'sudo docker build -t backend-base-devops-tarea5 .'
                 }
             }
         }
+    }
+}
