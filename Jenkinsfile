@@ -23,7 +23,7 @@ environment {
 stage('Testing') {
             steps {
                 echo 'Ejecutando pruebas...'
-                sh 'npm test'
+                sh 'npm run test'
             }
         }
 
