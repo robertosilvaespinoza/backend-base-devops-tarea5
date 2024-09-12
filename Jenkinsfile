@@ -35,3 +35,11 @@ environment {
         }
 }
 }
+stage('Construir imagen Docker') {
+            steps {
+                script {
+                    echo 'Construyendo imagen Docker...'
+                    sh 'docker build -t $DOCKER_IMAGE .'
+                }
+            }
+        }
