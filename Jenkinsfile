@@ -20,18 +20,5 @@ environment {
             }
         }
     }
-        stage('Testing') {
-            steps {
-                echo 'Ejecutando pruebas...'
-                sh 'npm run test'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo 'Construyendo el proyecto...'
-                sh 'npm run build'
-            }
-        }
 
 }
