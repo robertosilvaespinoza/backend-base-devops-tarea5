@@ -40,7 +40,7 @@ environment {
             steps {
                 script {
                     echo 'Construyendo imagen Docker...'
-                    sh 'sudo docker build -t backend-base-devops-tarea5 .'
+                    sh 'docker build -t backend-base-devops-tarea5 .'
                 }
             }
         }
